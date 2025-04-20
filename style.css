@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+}
+
+header{
+  background: rgba(200, 6, 25, 0.906);
+  height: 96px;
+  padding: 16px 32px;
+  max-width: 1440px;
+  margin: 0 auto;
+  .container{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h1{
+    margin-top: 20px;
+    color: white;
+    font-family: 'ZCOOL KuaiLe', cursive;
+  }
+  img{
+    vertical-align: text-bottom;
+    border-radius: 10px;
+    margin: 0; 
+  }
+  a:hover{
+    opacity: 0.8; 
+  }
+}
+
+.menus{
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 24px;
+  h2{
+    margin: 0;
+    font-family: 'ZCOOL KuaiLe', cursive;
+  }
+  .container{
+    max-width: 600px;
+    list-style-type: none;
+    margin: 32px auto;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+    a:hover{
+      opacity: 0.7;
+    }
+    li{
+      width: calc((100% - 32px - 32px) / 3);
+      box-sizing: border-box;
+      h3{
+        font-weight: normal;
+        margin: 8px 0 0;
+        font-size: 16px;
+        }
+      p{
+        margin: 0;
+        }
+      img{
+        vertical-align: bottom;
+        width: 100%;
+        height: auto;
+        } 
+    }  
+  }
+}
+
+footer{
+  text-align: center; 
+  margin: 0;
+  height: 196px;
+  background: lightgrey;
+  small{
+    font-size: 16px;
+    line-height: 128px;
+  }
+}
+
+.menu{
+  display: flex;
+  gap: 16px;
+  background-color: lightgrey;
+  max-width: 1472px;
+  justify-content: center;
+  div{
+    margin: 0 36px;
+    width: 264px;
+    ul{
+    margin-top: 0;
+    }
+   h2{
+    font-size: 20px;
+    margin-bottom: 4px;
+    }
+  }
+ 
+
+}
+
+.cook{
+  h2{
+    text-align: center;
+  }
+  .cooks{
+    display: flex;
+    gap: 32px;
+    margin: 0 auto;
+    max-width: 800px;
+    .make{
+      width: 800px;
+      margin: 0 24px;
+    }
+    }
+    .dish{
+      margin:0;
+      img{
+        margin-top: 16px;
+      }
+    }
+  }
+  p{
+    margin: 0;
+  }
+
+@media (max-width:650px) {
+  .menus{
+    max-width: 450px;
+    flex-wrap: wrap;
+    .container{
+      display: flex;
+      justify-content: center;
+      img{
+        width: 200px;
+        height: auto;
+      }
+      li {
+        width: 40%;
+      }
+    }
+  }
+  .cooks{
+    flex-direction: column;
+    align-items: center;
+    list-style-position: inside;
+    text-align: center;
+    gap: 8px;              
+    .make{
+      text-align: left;
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 0;
+    }
+    .dish{
+      margin-bottom: 24px;
+      margin-top: 0;
+      }
+    }
+  }
