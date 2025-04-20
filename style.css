@@ -186,10 +186,9 @@ footer{
       width: 100%;
       max-width: 375px;
       margin-bottom: 0;
-      margin: 0 auto;
       li{
         align-items: center;
-        margin: 0;
+        margin-right: 20px;
         padding-left: 0;
         margin-left: 0;
       }
