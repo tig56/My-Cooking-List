@@ -108,29 +108,35 @@ footer{
 }
 
 .cook{
+  max-width: 1472px;
   h2{
     text-align: center;
   }
   .cooks{
     display: flex;
     gap: 32px;
+    align-items: center;
     margin: 0 auto;
     max-width: 800px;
+    flex-wrap: wrap;
     .make{
-      width: 800px;
+      flex: 1;
       margin: 0 24px;
-    }
     }
     .dish{
       margin:0;
       img{
-        margin-top: 16px;
+        margin: 16px 16px 0 0;
+        flex: 1;
+        display: block;
       }
     }
   }
   p{
     margin: 0;
   }
+}
+
 
 @media (max-width:600px) {
   .menus{
@@ -170,7 +176,6 @@ footer{
         width: 100%;
       }
     }
-  }
   .cooks{
     flex-direction: column;
     align-items: center;
@@ -182,10 +187,15 @@ footer{
       width: 100%;
       max-width: 375px;
       margin-bottom: 0;
+      li{
+        margin-right: 8px;
+      }
     }
     .dish{
-      margin-bottom: 24px;
       margin-top: 0;
+      padding-bottom: 24px;
+      display: block;
+      display: flex;
       }
     }
   }
