@@ -187,6 +187,7 @@ footer{
       width: 100%;
       max-width: 375px;
       margin-bottom: 0;
+      margin: 0 auto;
       li{
         margin-right: 8px;
       }
