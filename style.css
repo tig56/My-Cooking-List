@@ -140,7 +140,7 @@ footer{
 
 @media (max-width:600px) {
   .menus{
-    max-width: 375px;
+    max-width: 350px;
     flex-wrap: wrap;
     .container{
       display: flex;
@@ -184,7 +184,7 @@ footer{
     .make{
       text-align: left;
       width: 100%;
-      max-width: 375px;
+      max-width: 350px;
       margin-bottom: 0;
       li{
         align-items: center;
