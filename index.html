@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My cook list</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <div class="container">
@@ -14,8 +17,23 @@
       <h1>Cooking</h1>
     </div>
   </header>
+
+  <div class="menu-btn">
+      <span class="material-icons" id="close">close</span>
+      <ul>
+        <li><a href="cook1.html">麻婆豆腐</a></li>
+        <li><a href="cook2.html">野菜炒め</a></li>
+        <li><a href="cook3.html">黒炒飯</a></li>
+        <li><a href="cook4.html">八宝菜</a></li>
+        <li><a href="cook5.html">天津飯</a></li>
+        <li><a href="cook6.html">中華丼</a></li>
+      </ul>
+  </div>
   <section class="menus">
-    <h2>Menu</h2>
+    <div class="menu-item">
+      <h2>Menu</h2>
+      <span class="material-icons" id="open">menu</span>
+    </div>
     <ul class="container">
       <li>
         <a href="cook1.html">
@@ -35,34 +53,36 @@
         <a href="cook3.html">
           <img src="cook3.png" width="180" height="180">
           <h3>黒炒飯</h3>
-          <p class="cost">644kcal</p> 
-        </a> 
+          <p class="cost">644kcal</p>
+        </a>
       </li>
       <li>
         <a href="cook4.html">
           <img src="cook4.png" width="180" height="180">
           <h3>八宝菜</h3>
-          <p class="cost">471kcal</p>  
+          <p class="cost">471kcal</p>
         </a>
       </li>
       <li>
         <a href="cook5.html">
           <img src="cook5.png" width="180" height="180">
           <h3>天津飯</h3>
-          <p class="cost">796kcal</p>  
+          <p class="cost">796kcal</p>
         </a>
       </li>
       <li>
         <a href="cook6.html">
           <img src="cook6.png" width="180" height="180">
           <h3>中華丼</h3>
-          <p class="cost">661kcal</p>  
+          <p class="cost">661kcal</p>
         </a>
       </li>
-    </ul>   
+    </ul>
   </section>
   <footer>
     <small>Let's cooking</small>
   </footer>
+  <script src="main.js"></script>
 </body>
+
 </html>

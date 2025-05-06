@@ -30,14 +30,89 @@ header{
   }
 }
 
+.menu-btn {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  transition: opacity .7s;
+  #close {
+    display: inline-block;
+    position: absolute;
+    top: 152px;
+    right: 48px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  ul {
+    list-style-type: none;
+    margin: 152px 0;
+    padding: 0;
+    li{
+      margin-top: 24px;
+      font-size: 20px;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity .3s, transform .3s;
+    }
+  }
+}
+
+.menu-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+  li {
+    opacity: 1;
+    transform: none;
+  }
+  li:nth-child(1){
+    transition-delay: .1s;
+  }
+  li:nth-child(2){
+    transition-delay: .2s;
+  }
+  li:nth-child(3){
+    transition-delay: .3s;
+  }
+  li:nth-child(4){
+    transition-delay: .4s;
+  }
+  li:nth-child(5){
+    transition-delay: .5s;
+  }
+  li:nth-child(6){
+    transition-delay: .5s;
+  }
+}
+
 .menus{
   max-width: 600px;
   margin: 0 auto;
   padding-top: 24px;
+  .menu-item{
+    display: flex;
+    justify-content: space-between;
+    #open.hide{
+      display: none;
+    }
   h2{
     margin: 0 20px;
     font-family: 'ZCOOL KuaiLe', cursive;
   }
+  .material-icons{
+    margin-right: 16px;
+    font-size: 36px;
+    cursor: pointer;
+  }
+}
+
   .container{
     max-width: 550px;
     list-style-type: none;
