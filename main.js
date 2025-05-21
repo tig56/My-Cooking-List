@@ -2,7 +2,8 @@
 
 {
     const open = document.getElementById('open');
-    const menuBtn = document.querySelector('.menu-btn');const close = document.getElementById('close');
+    const menuBtn = document.querySelector('.menu-btn');
+    const close = document.getElementById('close');
 
     open.addEventListener('click', () => {
         menuBtn.classList.add('show');

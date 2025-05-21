@@ -8,7 +8,6 @@ header{
   background: rgba(200, 6, 25, 0.906);
   height: 96px;
   padding: 16px 32px;
-  max-width: 1440px;
   .container{
     max-width: 600px;
     margin: 0 auto;
@@ -88,7 +87,7 @@ header{
     transition-delay: .5s;
   }
   li:nth-child(6){
-    transition-delay: .5s;
+    transition-delay: .6s;
   }
 }
 
