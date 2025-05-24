@@ -137,6 +137,7 @@ header{
         }
       p{
         margin: 0;
+        font-size: 12px;
         }
       img{
         vertical-align: bottom;
@@ -162,7 +163,7 @@ footer{
   display: flex;
   gap: 16px;
   background-color: lightgrey;
-  max-width: 1472px;
+  max-width: 2000px;
   justify-content: center;
   div{
     margin: 0 36px;
@@ -180,7 +181,7 @@ footer{
 }
 
 .cook{
-  max-width: 1472px;
+  max-width: 2000px;
   h2{
     text-align: center;
   }
