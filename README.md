@@ -28,5 +28,10 @@
 
 ---
 
+## 工夫したポイント
+- メニューボタンを配置することで、スマホでも快適に操作できるよう工夫
+- addEventListenerを使って、「開く」ボタンでメニューを表示し、「閉じる」ボタンで非表示にするという、シンプルで直感的なUI制御
+- .show や .hide クラスの付け外しで状態を制御する構造にすることで、スタイルの切り替えとロジックの分離を意識
+
 ##　リンク先
 [https://tig56.github.io/Save-Money/](https://tig56.github.io/My-Cooking-List/index.html)
